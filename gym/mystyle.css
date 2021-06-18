@@ -1,0 +1,372 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     overflow-x: hidden;
+ }
+
+ a{
+     text-decoration: none;
+     color: white;
+ }
+
+ .main{
+     background: url(fit.jpeg );
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: scroll;
+     display: flex;
+     height: 100vh;
+     width: 100vw;
+
+ }
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background: #000;
+}
+.icon{
+    width: 200px;
+    height: 70px;
+}
+
+.logo{
+    color: orange;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.menu{
+    margin-left: auto;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight:bold ;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: orangered;
+}
+
+.search{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+
+}
+
+.search input{
+    padding: 10px;
+    margin-left: auto;
+}
+
+/* .srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px orangered;
+    margin-top: 13px;color: papayawhip;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+} */
+
+.btn{
+    background: orange;
+    border: orangered;
+    color: papayawhip;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 10px;
+    
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    margin: 20px;
+    border-radius: 35px;
+    position: relative;
+    left: 0px;
+    padding: 20px;
+}
+
+.container.type1 .image.holder{
+    background-image: url(workout.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 300ms ease-in-out;
+
+}
+
+.container.type1:hover .image.holder{
+    border-radius: 20px;
+    transform: translateY(-50px)scale(1.05);
+    box-shadow: 5px 5px 4px black;
+}
+
+.container.type1 p{
+    margin: 10px 0;
+    overflow-y: hidden;
+    padding: 10px 0;
+
+}
+
+.container.type1 .title{
+    width: 100%;
+    transition: 250ms linear;
+    overflow-y: hidden;
+    color: blanchedalmond;
+
+}
+
+.container.type1:hover .title{
+    transform: translateX(45%);
+}
+
+.container.type2 .image.holder{
+    background-image: url(equip.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 300ms ease-in-out;
+
+}
+
+.container.type2:hover .image.holder{
+    border-radius: 20px;
+    transform: translateY(-50px)scale(1.05);
+    box-shadow: 5px 5px 4px black;
+}
+
+.container.type2 p{
+    margin: 10px 0;
+    overflow-y: hidden;
+    padding: 10px 0;
+
+}
+
+.container.type2 .title{
+    width: 100%;
+    transition: 250ms linear;
+    overflow-y: hidden;
+    color: blanchedalmond;
+
+}
+
+.container.type2:hover .title{
+    transform: translateX(45%);
+}
+
+.container.type3 .image.holder{
+    background-image: url(strong.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 300ms ease-in-out;
+
+}
+
+.container.type3:hover .image.holder{
+    border-radius: 20px;
+    transform: translateY(-50px)scale(1.05);
+    box-shadow: 5px 5px 4px black;
+}
+
+.container.type3 p{
+    margin: 10px 0;
+    overflow-y: hidden;
+    padding: 10px 0;
+
+}
+
+.container.type3 .title{
+    width: 100%;
+    transition: 250ms linear;
+    overflow-y: hidden;
+    color: blanchedalmond;
+
+}
+
+.container.type3:hover .title{
+    transform: translateX(45%);
+}
+
+
+.contain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: brown;
+}
+.clip-tittle{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.get_fit {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.login{
+    width: 300px;
+    background:black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding: 40px 25px;
+    border-radius: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login h1{
+    background-color: orangered;
+    border-radius: 6px;
+    margin: 15px;
+    padding: 10px;
+    font-weight: bold;
+    display: inline;
+}
+
+.login input{
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 10px;
+}
+ .login input[type="text"], input[type="password"]{
+     border: none;
+     border-bottom: 2px solid white;
+     background: transparent;
+     color: thistle;
+     outline: none;
+     height: 20px;
+     font-size: 16px;
+     padding: 10px;
+     border-top: blanchedalmond;
+ }
+
+ .login input[type="submit"] {
+     border: none;
+     outline: none;
+     height: 30px;
+     color: palegoldenrod;
+     background: black;
+     font-size: 17px;
+     border-radius: 20px;
+ }
+
+ .login form .btn-login{
+    border: thin solid white;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+ }
+
+body {
+    background-size:cover;
+}
+
+.Registration-form{
+    position: relative;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.Registration-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Registration-form form input{
+    width: 40%;
+    padding: 10px;
+    background: transparent;
+    border: thin white solid;
+    border-radius: 10px;
+}
+
+.Registration-form form p{
+    margin-top: 10px;
+
+} 
+
+.Registration-form form button{
+    padding: 10px;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    border: thin white solid;
+    border-radius: 10px;
+
+}
+
+.more{
+    padding: 10px;
+    background-color: orange;
+}
+
+
+
+ 
